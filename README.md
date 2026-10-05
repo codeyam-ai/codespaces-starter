@@ -47,3 +47,8 @@ This template is never changed.
 not written by hand, so it matches what existing projects get. The editor
 repository runs a drift check against it. To regenerate it, run that command
 in an empty folder and copy the file here.
+
+The codespace installs the editor from npm at the production `latest` tag. To
+try unreleased builds, use
+[`codeyam-ai/codespaces-starter-staging`](https://github.com/codeyam-ai/codespaces-starter-staging),
+which is the same template rendered with `--channel staging`.

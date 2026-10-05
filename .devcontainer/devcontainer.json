@@ -17,7 +17,7 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "curl -fsSL https://codeyam.com/install.sh | sh && npm install -g @anthropic-ai/claude-code && npx -y playwright install --with-deps chromium",
+  "postCreateCommand": "npm install -g @codeyam-editor/codeyam-editor@latest @anthropic-ai/claude-code && npx -y playwright install --with-deps chromium",
   "postStartCommand": "mkdir -p .codeyam/logs && setsid nohup codeyam-editor start --hosted --no-open --port 14199 > .codeyam/logs/codespaces-editor.log 2>&1 &",
   "secrets": {
     "ANTHROPIC_API_KEY": {
